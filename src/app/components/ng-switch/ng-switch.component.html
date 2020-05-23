@@ -1,0 +1,21 @@
+<h5>145. ngSwitch - Múltiples opciones con una sola decisión</h5>
+<button type="button" class="btn btn-success mb-3 ml-3" (click)="alerta='success'">
+    Success
+</button>
+<button type="button" class="btn btn-danger mb-3 ml-3" (click)="alerta='danger'">
+    Danger
+</button>
+<button type="button" class="btn btn-warning mb-3 ml-3" (click)="alerta='warning'">
+    Warning
+</button>
+<div [ngSwitch]="alerta">
+    <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div *ngSwitchCase="'danger'" class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+</div>
