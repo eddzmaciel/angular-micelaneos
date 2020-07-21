@@ -25,6 +25,8 @@ export class HomeComponent implements
   AfterViewChecked,
   OnDestroy {
 
+  public usuario: string;
+
   constructor() { console.log('home.component -- constructor'); }
   ngOnInit() { console.log('home.component -- ngOnInit'); }
   ngOnChanges() { console.log('home.component -- ngOnChanges'); }

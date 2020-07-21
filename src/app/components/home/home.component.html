@@ -11,3 +11,19 @@
 </p>
 <hr>
 <app-ng-switch class="mt-2"></app-ng-switch>
+
+<hr>
+
+<h5>*ngIf with else</h5>
+
+<div *ngIf="usuario; else login">
+    Bienvenido {{usuario}}
+</div>
+
+<ng-template #login>
+    Por favor ingrese
+    <button type="button" class="btn btn-primary" (click)="usuario='edson'">Ingresar</button>
+</ng-template>
+
+<br>
+<br>
